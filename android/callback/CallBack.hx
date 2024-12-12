@@ -70,9 +70,7 @@ private class CallBackHandler #if (lime >= "8.0.0") implements JNISafety #end
 	public function onActivityResult(content:String):Void
 	{
 		if (CallBack.onActivityResult != null)
-		{
 			CallBack.onActivityResult.dispatch(Json.parse(content.trim()));
-		}
 	}
 
 	/**
@@ -86,8 +84,6 @@ private class CallBackHandler #if (lime >= "8.0.0") implements JNISafety #end
 	public function onRequestPermissionsResult(content:String):Void
 	{
 		if (CallBack.onRequestPermissionsResult != null)
-		{
 			CallBack.onRequestPermissionsResult.dispatch(Json.parse(content.trim()));
-		}
 	}
 }
