@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+	<meta title="Extension-AndroidTools Test" package="org.openfl.lime.samples.helloworld" version="1.0.0" company="OpenFL" />
+
+	<app main="Main" path="export" file="EATest" />
+
+	<source path="source" />
+
+	<haxelib name="lime" />
+	<haxelib name="extension-androidtools" if="android" />
+
+	<haxeflag name="-dce" value="full" />
+</project>
